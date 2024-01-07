@@ -16,7 +16,7 @@ public class CartPage {
 	@FindBy(xpath="//ul[@id='cartData']")private List<WebElement> product;
 	@FindBy(xpath="(//a[@onclick='cart.submitOrder()'])[1]")private WebElement proceedToCheckOut;
 	@FindBy(xpath="(//a[@onclick='cart.continueShopping()'][1])")private WebElement continueShopping;
-	@FindBy(xpath="//a[@onclick='cart.remove(670762949)']")private WebElement remove;
+	@FindBy(xpath="////a[text()='Remove']")private  WebElement remove;
 	
 	public CartPage(WebDriver driver)
 	{
@@ -31,7 +31,10 @@ public class CartPage {
      public void clickOnContinueShopping() {
     	 continueShopping.click();
      }
-     public void clickOnRemove() {
+     public void clickOnRemove(WebDriver driver) {
+    	  WebDriverWait wait=new  WebDriverWait(driver,Duration.ofMillis(5000));
+    	  wait.until(ExpectedConditions.visibilityOf(proceedToCheckOut));
+    	  
     	 remove.click();
      }
    

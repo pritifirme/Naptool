@@ -33,10 +33,10 @@ public class VerifyShoppingCategoriesTest extends BaseTest {
 		test=extentReports.createTest("verifyIfUserIsAbleToAccessShoppingCategories");
 		NaptoolHomePage naptoolHomePage=new NaptoolHomePage(driver);
 		naptoolHomePage.clickonshoppingCategoriesdropdown();
-		naptoolHomePage.selectShoppingCategories(driver, 3);
+		naptoolHomePage.selectShoppingCategories(driver,3);
 	    String currentTitle=driver.getTitle();
 	    Assert.assertTrue(currentTitle.contains("Mobile Handsets"));
-	    Assert.assertEquals(naptoolHomePage.getCategoryHeading(), "Mobiles : Mobile Handsets");
+	  Assert.assertEquals(naptoolHomePage.getCategoryHeading(), "Mobiles : Mobile Handsets");
 	
 	}
 	@Test
@@ -45,8 +45,8 @@ public class VerifyShoppingCategoriesTest extends BaseTest {
 		naptoolHomePage.enterproductName("cooker");
 		naptoolHomePage.clickOnSearch();
 		String title=driver.getTitle();
-		Assert.assertTrue(title.contains("Search Result for cooker"));
-		Assert.assertEquals(naptoolHomePage.getCategoryHeading()," cooker");
+		Assert.assertTrue(title.contains("cooker"));
+		Assert.assertEquals(naptoolHomePage.getCategoryHeading(),"Search Results For : cooker");
 		
 		
 	}

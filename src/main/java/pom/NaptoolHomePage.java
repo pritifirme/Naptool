@@ -14,11 +14,10 @@ public class NaptoolHomePage {
 	@FindBy(xpath="//a[text()='Log In / Register']")private WebElement login;
 	@FindBy(xpath="//a[text()='Track Order']")private WebElement trackOrder;
 	@FindBy(xpath="//span[@class='arrowNav']")private WebElement shoppingCategoriesDropdown;
-	@FindBy(xpath="//ul[@id='mainMenu_UL']")private List<WebElement> categories;
-	@FindBy(xpath="//a[text()='Mobile Handsets'][1]")private WebElement subCategories;
+	@FindBy(xpath="//ul[@id='mainMenu_UL']//li")private List<WebElement> categories;
+	@FindBy(xpath="(//a[text()='Mobile Handsets'])[1]")private WebElement subCategories;
 	@FindBy(xpath="//li[@class='head']//h1")private WebElement categoryHeadings;
 	@FindBy(xpath="//input[@name='header_search_text']")private WebElement search;
-	 
 	@FindBy(xpath="(//a[@href='javascript:autoSuggestion.headerSearch()'])[2]")private WebElement searchButton;
 	@FindBy(xpath="(//a[@href='#ShoppingCartBox'])[2]")private WebElement addtoCart;
 

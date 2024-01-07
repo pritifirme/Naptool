@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-05T16:35:38 IST" name="Default suite" finished-at="2024-01-05T16:35:45 IST" duration-ms="7738">
+  <suite started-at="2024-01-07T16:31:22 IST" name="Default suite" finished-at="2024-01-07T16:31:45 IST" duration-ms="22959">
     <groups>
     </groups>
-    <test started-at="2024-01-05T16:35:38 IST" name="Default test" finished-at="2024-01-05T16:35:45 IST" duration-ms="7738">
-      <class name="test.AddToCart">
-        <test-method is-config="true" signature="openApllication()[pri:0, instance:test.AddToCart@6aeb35e6]" started-at="2024-01-05T16:35:38 IST" name="openApllication" finished-at="2024-01-05T16:35:43 IST" duration-ms="5276" status="PASS">
+    <test started-at="2024-01-07T16:31:22 IST" name="Default test" finished-at="2024-01-07T16:31:45 IST" duration-ms="22959">
+      <class name="test.ProductSearchTest">
+        <test-method is-config="true" signature="openApllication()[pri:0, instance:test.ProductSearchTest@293a5bf6]" started-at="2024-01-07T16:31:22 IST" name="openApllication" finished-at="2024-01-07T16:31:39 IST" duration-ms="16874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApllication -->
-        <test-method signature="verifyUserIsAbleToRemoveProductFromCart()[pri:0, instance:test.AddToCart@6aeb35e6]" started-at="2024-01-05T16:35:43 IST" name="verifyUserIsAbleToRemoveProductFromCart" finished-at="2024-01-05T16:35:45 IST" duration-ms="2368" status="PASS">
+        <test-method signature="verifyProductAreNotDisplayOnSearchValidSearch()[pri:0, instance:test.ProductSearchTest@293a5bf6]" started-at="2024-01-07T16:31:39 IST" name="verifyProductAreNotDisplayOnSearchValidSearch" finished-at="2024-01-07T16:31:45 IST" duration-ms="5983" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToRemoveProductFromCart -->
-      </class> <!-- test.AddToCart -->
+        </test-method> <!-- verifyProductAreNotDisplayOnSearchValidSearch -->
+      </class> <!-- test.ProductSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
