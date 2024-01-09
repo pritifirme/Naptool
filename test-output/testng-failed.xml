@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.ProductSearchTest">
+      <class name="test.VerifyShoppingCategoriesTest">
         <methods>
-          <include name="verifyProductAreNotDisplayOnSearchValidSearch"/>
           <include name="openApllication"/>
+          <include name="configureReports"/>
+          <include name="verifyIfUserIsAbleToAccessShoppingCategories"/>
+          <include name="publishReport"/>
         </methods>
-      </class> <!-- test.ProductSearchTest -->
+      </class> <!-- test.VerifyShoppingCategoriesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

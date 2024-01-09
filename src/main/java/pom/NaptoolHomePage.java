@@ -25,7 +25,7 @@ public class NaptoolHomePage {
     public NaptoolHomePage(WebDriver driver)
     {
     	
-    		PageFactory.initElements(driver,this);
+    		PageFactory.initElements(driver,this);  
     }
     	public void clikonLogin()
     	{

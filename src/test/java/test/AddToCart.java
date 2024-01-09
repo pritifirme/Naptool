@@ -61,6 +61,7 @@ public class AddToCart extends BaseTest {
     	  cartPage=new CartPage(driver);
     	  Assert.assertEquals(cartPage.getNumberOfProductPresentInCart(driver),2);
     	 
+    	 
     	}
      @Test
      public void verifyUserIsAbleToRemoveProductFromCart() {
