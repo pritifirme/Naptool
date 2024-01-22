@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.VerifyShoppingCategoriesTest">
+      <class name="test.AddressPage">
         <methods>
           <include name="openApllication"/>
-          <include name="configureReports"/>
-          <include name="verifyIfUserIsAbleToAccessShoppingCategories"/>
-          <include name="publishReport"/>
+          <include name="verifyShippingAddressAndSave"/>
         </methods>
-      </class> <!-- test.VerifyShoppingCategoriesTest -->
+      </class> <!-- test.AddressPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
