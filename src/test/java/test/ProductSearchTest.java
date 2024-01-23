@@ -2,6 +2,7 @@ package test;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -10,9 +11,10 @@ import pom.NaptoolHomePage;
 import pom.ProductResultPage;
 
 public class ProductSearchTest extends BaseTest {
+	@Parameters ({"browser"})
 	@BeforeMethod
-	public void openApllication() {
-		driver=LaunchBrowser.chrome();
+	public void openApllication(String browser) {
+		driver=LaunchBrowser.browser(browser);
 	}
      @Test
      public void verifyProductAreDisplayOnSearchValidSearch() {

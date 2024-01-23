@@ -12,6 +12,7 @@ import io.reactivex.rxjava3.functions.Action;
 
 public class NaptoolHomePage {
 	@FindBy(xpath="//a[text()='Log In / Register']")private WebElement login;
+	@FindBy(xpath="//input[@type='text'][3]")private WebElement mobileNo;
 	@FindBy(xpath="//a[text()='Track Order']")private WebElement trackOrder;
 	@FindBy(xpath="//span[@class='arrowNav']")private WebElement shoppingCategoriesDropdown;
 	@FindBy(xpath="//ul[@id='mainMenu_UL']//li")private List<WebElement> categories;
@@ -25,7 +26,7 @@ public class NaptoolHomePage {
     public NaptoolHomePage(WebDriver driver)
     {
     	
-    		PageFactory.initElements(driver,this);
+    		PageFactory.initElements(driver,this);  
     }
     	public void clikonLogin()
     	{
@@ -63,4 +64,5 @@ public class NaptoolHomePage {
     	{
     		addtoCart.click();
     	}
+    	
 }

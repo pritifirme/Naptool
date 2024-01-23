@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class ProductQuickViewPage {
 	   
 	
-	      @FindBy(xpath="//div[@class='display_none']//h1")private WebElement productName;
+	      @FindBy(xpath="//div[@id='square_Details']//h1")private WebElement productName;
 	      @FindBy(xpath="//span[@class='offer-price']")private WebElement price;
-	      @FindBy(xpath="////span[@class=\"ship-price\"]")private WebElement shippingCharges;   
-	      @FindBy(xpath="//a[@title=\"Buy online\"]")private WebElement clickHereToBuy;
+	      @FindBy(xpath="//span[@class='ship-price']")private WebElement shippingCharges;   
+	      @FindBy(xpath="//a[@title='Buy online']")private WebElement clickHereToBuy;
 	      
 	   
 
@@ -24,20 +24,21 @@ public class ProductQuickViewPage {
                return productName.getText();
             	
             }
-            public void getProductPrice()
+            public double getProductPrice()
             {
-            	price.getText();
+            	return Double.parseDouble(price.getText());
             
             }
             public void clickOnclickHereToBuy()
             {
             	clickHereToBuy.click();
             }
-            public String getShippingCharges()
+            public double getShippingCharges()
             {
             	String charges=shippingCharges.getText();
             	String [] charge=charges.split(" ");
-            	return charge[1];
+            	
+            	return Double.parseDouble(charge[1]);
             }
            
          

@@ -1,10 +1,11 @@
 package test;
 
-import org.openqa.selenium.WebDriver;
+ 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -19,9 +20,10 @@ import utility.Reports;
 public class VerifyShoppingCategoriesTest extends BaseTest {
 	ExtentReports extentReports;
 	ExtentTest test;
+	@Parameters ({"browser"})
 	@BeforeMethod
-	public void openApllication() {
-		 driver =LaunchBrowser.chrome();
+	public void openApllication(String browser) {
+		 driver =LaunchBrowser.browser(browser);
 		
 	}
 	@BeforeMethod
