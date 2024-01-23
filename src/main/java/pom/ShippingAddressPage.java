@@ -19,7 +19,7 @@ public class ShippingAddressPage {
 	@FindBy(xpath="//input[@name='mobile']")private WebElement mobileNumber;
 	//@FindBy(xpath="//input[@name='landline']")private WebElement landline;
 	@FindBy(xpath="//a[@onclick='myAddressBook.validateForm()']")private WebElement addNewAddress;
-	//@FindBy(xpath="//a[text()='Save & Proceed']")private WebElement saveButton;
+	@FindBy(xpath="//a[text()='Save & Proceed']")private WebElement saveButton;
 	@FindBy(xpath=" //span[text()='Ship to This Address'] ")private WebElement shiptToThisAddress;
 	@FindBy(xpath="//label[text()='	Cash On Delivery']")private WebElement cashOnDelivery;
 	@FindBy(xpath="//a[text()='Click here to Place Order']")private WebElement clickHereToPlaceOrder;
@@ -65,9 +65,9 @@ public class ShippingAddressPage {
 	public void enterMobileNo(String number) {
 		mobileNumber.sendKeys(number);
 	}
-	//public void ClickSaveButton() {
-	//	saveButton.click();
-	//}
+	public void ClickSaveButton() {
+	    saveButton.click();
+	}
 	public void clickShiptToThisAddress() {
 		shiptToThisAddress.click();
 	}

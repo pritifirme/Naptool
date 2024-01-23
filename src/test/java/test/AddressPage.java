@@ -50,8 +50,8 @@ public class AddressPage extends BaseTest {
 		 shippingAddressPage.selectCountryState("MAHARASHTRA");
 		 shippingAddressPage.selectCity("Pune");
 		 shippingAddressPage.enterMobileNo("7972615937");
-		// shippingAddressPage.ClickSaveButton();
-		shippingAddressPage.clickPnAddNewAddress();
+		 shippingAddressPage.ClickSaveButton();
+		// shippingAddressPage.clickPnAddNewAddress();
 		 shippingAddressPage.clickShiptToThisAddress();
 		 shippingAddressPage.clickOnHereToPlaceOrder();
 		 
